@@ -1,17 +1,20 @@
 {
   "name": "@rollout/pkgcloud",
   "description": "A provider agnostic cloud library for Node.js",
-  "version": "2.2.1",
-  "author": "Saurabh Kashyap <saurabhkashyap0001@gmail.com",
+  "version": "2.2.0",
+  "author": "Saurabh Kashyap",
   "contributors": [
     "Ross Kukulinski <ross@kukulinski.com>",
     "Jarrett Cruger <jcrugzz@gmail.com>",
     "Ken Perkins <ken.perkins@rackspace.com>",
     "Saurabh Kashyap <saurabh@raindigi.com>"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
-    "url": "http://github.com/saurabharch/pkgcloud.git"
+    "url": "git+ssh://git@github.com/saurabharch/pkgcloud.git"
   },
   "keywords": [
     "cloud",
@@ -58,6 +61,7 @@
     "jshint": "^2.9.6",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
+    "release-it": "14.11.6",
     "should": "^13.2.3"
   },
   "main": "./lib/pkgcloud",
@@ -65,9 +69,21 @@
     "test": "MOCK=on nyc mocha -t 4000 test/*/*/*-test.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "jshint --exclude-path .gitignore .",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "release": "release-it"
   },
   "engines": {
     "node": ">= 8.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/saurabharch/pkgcloud/issues"
+  },
+  "homepage": "https://github.com/saurabharch/pkgcloud#readme",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "license": "MIT"
 }
