@@ -1,8 +1,8 @@
 {
-  "name": "pkgcloud",
+  "name": "@rollout/pkgcloud",
   "description": "A provider agnostic cloud library for Node.js",
-  "version": "2.2.0",
-  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "version": "2.2.1",
+  "author": "Saurabh Kashyap <saurabhkashyap0001@gmail.com",
   "contributors": [
     "Ross Kukulinski <ross@kukulinski.com>",
     "Jarrett Cruger <jcrugzz@gmail.com>",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/pkgcloud/pkgcloud.git"
+    "url": "http://github.com/saurabharch/pkgcloud.git"
   },
   "keywords": [
     "cloud",
