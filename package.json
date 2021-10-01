@@ -1,5 +1,5 @@
 {
-  "name": "@rollout/pkgcloud",
+  "name": "rollout-pkgcloud",
   "description": "A provider agnostic cloud library for Node.js",
   "version": "2.2.0",
   "author": "Saurabh Kashyap",
