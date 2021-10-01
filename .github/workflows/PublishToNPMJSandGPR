@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-node@master
       - name: Update package version and setup git
         run: |
-          git config user.name "Actions User"
-          git config user.email noreply@github.com
+          git config user.name "saurabharch"
+          git config user.email saurabhkashyap0001@gmail.com
           npm version 1.0.$(date +%s)
 
       # Publish to NPMJS
@@ -28,7 +28,7 @@ jobs:
       - name: Publish to NPMJS
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-          npm config set scope "@affrae"
+          npm config set scope "@saurabharch"
           npm config list
           npm publish --access public
         env:
